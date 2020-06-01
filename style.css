@@ -1,0 +1,116 @@
+/*p
+{
+    color:red;
+    font-size: 1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Parametrer sa propre police */
+@font-face {  
+    font-family: MaSuperPolice;
+    src: url('Fonts/introrustg-base2line.otf');
+}
+
+h2
+{
+    color: red; /* Couleur du texte */
+    font-size: 1.2em; /* Taille (px/cm/mm ou (xx x - small medium large /em) */
+    font-family: MaSuperPolice; /* Police */
+    font-style: normal; /* Mettre en italique: italique/oblique/normal */
+    font-weight: normal /* Mettre en Gras: bold/normal */
+    /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
+}
+
+.conteneur
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    /*flex-wrap: wrap;*/
+    background-color: rgb(126, 119, 119);
+    height: 200px;
+    /*padding-top: 0px;
+    padding-bottom: 0px;*/
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.elt:nth-child(1)
+{
+    background-color: blue;
+    align-self: center;
+}
+caption
+{
+    caption-side: bottom;
+}
+textarea
+{
+    text-align: justify;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+}
+
+h3
+{
+    color: white; /* Couleur du texte */
+    font-size: 0.8em; /* Taille (px/cm/mm ou (xx x - small medium large /em) */
+    background-color:green ;
+    border: 1px solid black;
+    width: 100px;
+    /*min-width: 600px;*/
+    height: 100px;
+    overflow: auto;
+    text-align: center;
+    /*margin: 15px 15px;
+    padding: 15px 15px;
+    margin: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;*/
+
+
+}
+
+a:focus /* Quand le visiteur clique sur le lien */
+{
+    background-color: #FFCC66;
+    text-decoration: underline;
+    color: green;
+}
+
+
+header  
+{
+    /*box-shadow: 6px 6px 6px red ;*/
+    border: 1.2em blue groove;
+}
+
+h6
+{
+    /*box-shadow: -6px -6px 6px black ;*/
+    text-align: justify;
+    text-decoration: blink;
+    background-color: red;
+    opacity: 0.5;
+    width: 250px; 
+    height: 20px;
+    margin: auto;
+    overflow: auto;
+    /* min-width: 100px; Soulignement et autres décorations: underline: souligné.
+    
+height: 100%;
+    line-through: barré.
+    
+    overline: ligne au-dessus.
+    
+    blink: clignotant. Ne fonctionne pas sur tous les navigateurs (Internet Explorer et Google Chrome, notamment).
+    
+    none: normal (par défaut) */
+}
